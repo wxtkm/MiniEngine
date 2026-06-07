@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f4a7103-19cc-4706-a949-26198b289c05" name="Changes" comment="" />
+    <list default="true" id="4f4a7103-19cc-4706-a949-26198b289c05" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/engine/static_object.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/game_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine/game_object.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine/scene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/sprite.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine/sprite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +61,8 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.core.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.scene.executor": "Run",
+    "Python.sprite.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
