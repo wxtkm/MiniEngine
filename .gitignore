@@ -1,19 +1,5 @@
-# Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
 
-# Virtual env
-venv/
-.env/
 
-# PyCharm
-.idea/
-
-# OS
-.DS_Store
-
-# Build
 build/
 dist/
