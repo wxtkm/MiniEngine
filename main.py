@@ -4,8 +4,19 @@ from engine.static_object import StaticObject
 
 game = Game()
 
-player = Sprite(50, 50)
-wall = StaticObject(300, 300)
+player = Sprite(100, 100)
+
+wall = StaticObject(
+    300,
+    200,
+    size=50,
+    color=(255, 0, 0)
+)
+
+game.background_color = (20, 20, 40)
+
+game.scene.add(player)
+game.scene.add(wall)
 
 game.scene.add(player)
 game.scene.add(wall)

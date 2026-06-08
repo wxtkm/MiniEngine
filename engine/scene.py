@@ -1,8 +1,11 @@
 class Scene:
-    def __init__(self):
+    def __init__(self, width=800, height=600):
         self.objects = []
+        self.width = width
+        self.height = height
 
     def add(self, obj):
+        print("ADD:", obj, obj.x, obj.y)
         self.objects.append(obj)
 
     def check_collision(self, obj, dx=0, dy=0):
@@ -32,9 +35,9 @@ class Scene:
         for obj in self.objects:
             obj.update(self)
 
-    def render(self, screen):
+    def render(self, screen, camera):
         for obj in self.objects:
-            obj.render(screen)
+            obj.render_with_camera(screen, camera)
 
     def get_player(self):
         for obj in self.objects:

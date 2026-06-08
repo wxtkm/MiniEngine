@@ -2,6 +2,8 @@ import pygame
 import sys
 from engine.scene import Scene
 from engine.sprite import Sprite
+from engine.camera import Camera
+
 
 
 class Game:
@@ -16,7 +18,11 @@ class Game:
         self.clock = pygame.time.Clock()
         self.running = False
 
-        self.scene = Scene()
+        self.scene = Scene(self.width, self.height)
+
+        self.background_color = (30, 30, 30)
+
+        self.camera = Camera(self.width, self.height)
 
 
     def handle_events(self):
@@ -27,11 +33,16 @@ class Game:
     def update(self):
         self.scene.update()
         self.check_win()
+        self.scene.update()
+
+        player = self.scene.get_player()
+        if player:
+            self.camera.follow(player)
 
     def render(self):
-        self.screen.fill((30, 30, 30))
-        self.scene.render(self.screen)
+        self.screen.fill(self.background_color)
         pygame.display.flip()
+        self.scene.render(self.screen, self.camera)
 
     def check_win(self):
         player = self.scene.get_player()
