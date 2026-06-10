@@ -25,18 +25,11 @@ class Sprite(GameObject):
         elif keys[pygame.K_s]:
             dy = self.speed
 
-        # движение с коллизией
         if not scene.check_collision(self, dx, 0):
             self.x += dx
 
         if not scene.check_collision(self, 0, dy):
             self.y += dy
-
-        self.x = max(0, self.x)
-        self.y = max(0, self.y)
-
-        self.x = min(self.x, scene.width - self.size if hasattr(scene, "width") else 800 - self.size)
-        self.y = min(self.y, scene.height - self.size if hasattr(scene, "height") else 600 - self.size)
 
     def render_with_camera(self, screen, camera):
         pygame.draw.rect(

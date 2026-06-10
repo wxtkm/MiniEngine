@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f4a7103-19cc-4706-a949-26198b289c05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/engine/camera.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine/camera.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine/core.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine/scene.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/sprite.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine/sprite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/static_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine/static_object.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

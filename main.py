@@ -5,6 +5,7 @@ from engine.static_object import StaticObject
 game = Game()
 
 player = Sprite(100, 100)
+player.tag = "player"
 
 wall = StaticObject(
     300,
@@ -14,9 +15,6 @@ wall = StaticObject(
 )
 
 game.background_color = (20, 20, 40)
-
-game.scene.add(player)
-game.scene.add(wall)
 
 game.scene.add(player)
 game.scene.add(wall)

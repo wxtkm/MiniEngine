@@ -10,7 +10,7 @@ class Game:
     def __init__(self, width=800, height=600, title="MiniEngine"):
         pygame.init()
 
-        self.screen = pygame.display.set_mode((width, height))
+        self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
         self.width, self.height = self.screen.get_size()
 
         pygame.display.set_caption(title)
@@ -32,17 +32,16 @@ class Game:
 
     def update(self):
         self.scene.update()
-        self.check_win()
-        self.scene.update()
 
         player = self.scene.get_player()
+
         if player:
             self.camera.follow(player)
 
     def render(self):
         self.screen.fill(self.background_color)
-        pygame.display.flip()
         self.scene.render(self.screen, self.camera)
+        pygame.display.flip()
 
     def check_win(self):
         player = self.scene.get_player()

@@ -6,6 +6,5 @@ class Camera:
         self.height = height
 
     def follow(self, target):
-        # центрируем камеру на игроке
-        self.x = target.x - self.width // 2
-        self.y = target.y - self.height // 2
+        self.x = target.x + target.size // 2 - self.width // 2
+        self.y = target.y + target.size // 2 - self.height // 2
